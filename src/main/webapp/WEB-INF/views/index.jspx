@@ -1,0 +1,31 @@
+<div xmlns:s="http://www.springframework.org/tags" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+<jsp:output omit-xml-declaration="yes" />
+	<s:message var="app_name" code="application_name" htmlEscape="false" />
+	<s:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+    
+    <div class="container">
+		<h3>
+			<s:message code="welcome_h3" arguments="${app_name}" />
+		</h3>
+      
+		<ul class="entity">
+            <li><a href="conference">Conference</a></li>
+            <li><a href="division">Division</a></li>
+            <li><a href="draft">Draft</a></li>
+            <li><a href="draftRound">DraftRound</a></li>
+            <li><a href="draftTeam">DraftTeam</a></li>
+            <li><a href="draftType">DraftType</a></li>
+            <li><a href="player">Player</a></li>
+            <li><a href="playerPosition">PlayerPosition</a></li>
+            <li><a href="playerStat">PlayerStat</a></li>
+            <li><a href="playerStatus">PlayerStatus</a></li>
+            <li><a href="schedule">Schedule</a></li>
+            <li><a href="scheduleType">ScheduleType</a></li>
+            <li><a href="status">Status</a></li>
+            <li><a href="team">Team</a></li>
+            <li><a href="teamStat">TeamStat</a></li>
+	    </ul>
+
+    </div> <!-- /container -->
+</div>

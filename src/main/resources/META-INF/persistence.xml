@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    
+	<persistence-unit name="persistence-unit1" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.kumasi.mynfl.domain.jpa.ConferenceEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.DivisionEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.DraftEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.DraftRoundEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.DraftTeamEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.DraftTypeEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.PlayerEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.PlayerPositionEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.PlayerStatEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.PlayerStatusEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.PlayerStatusEntityKey</class>
+		<class>com.kumasi.mynfl.domain.jpa.ScheduleEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.ScheduleTypeEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.StatusEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.TeamEntity</class>
+		<class>com.kumasi.mynfl.domain.jpa.TeamStatEntity</class>
+		<properties>
+			<!-- Database configuration -->
+			<!-- No database definition for database id 5 : Derby used as an example -->
+			<property name="hibernate.connection.driver_class"  value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.url"           value="jdbc:mysql://localhost:3306/nfldb"/>
+			<property name="hibernate.connection.username"      value="nfladmin1"/>
+			<property name="hibernate.connection.password"      value="fantasy"/>
+			<property name="hibernate.dialect"                  value="org.hibernate.dialect.MySQLDialect"/>
+			<!-- Hibernate configuration -->
+			<property name="hibernate.hbm2ddl.auto"       value="none"/>
+			<property name="hibernate.show_sql"           value="true"/>
+		</properties>
+	</persistence-unit>
+    
+</persistence>
